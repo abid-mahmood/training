@@ -2,9 +2,18 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 import { addUser } from '..';
 
+// import map from `lodash/lib/map`;
+
+import { combineReducers } from 'redux';
+
+
+const rootReducer = combineReducers([
+  userReducer,
+])
+
+export default rootReducer;
 
 class A extends Component {
-  this.props.isUserLoading
   this.props.addUser(user);
 }
 

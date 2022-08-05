@@ -2,6 +2,12 @@ import { addUser } from '../actions/users';
 
 export function addUserActionCreator() {
   return dispatch => {
-    dispatch(addUser())
+    dispatch(addUserRequest())
+  }
+}
+
+export function deleteUserActionCreator() {
+  return dispatch => {
+    dispatch(deleteUserRequest())
   }
 }
