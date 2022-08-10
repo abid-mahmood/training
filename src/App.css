@@ -1,38 +1,54 @@
+body {
+  background-color: rgb(237, 234, 234);
+}
 .App {
   text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgb(189, 214, 235);
+  width: 20rem;
+  padding: 50px 80px;
+  border: 3px solid rgb(5, 137, 245);
+  border-radius: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:active {
+  background-color: #c5c4c4;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.counter-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.counter-container div {
+  font-size: larger;
+}
+.reminder-wrapper {
+  background-color: white;
+  font-size: large;
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+.reminder-wrapper input {
+  font-size: large;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 0;
+}
+.reminder-container {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
