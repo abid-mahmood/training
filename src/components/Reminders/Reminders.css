@@ -1,0 +1,33 @@
+.reminders-list {
+  list-style: none;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reminders-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  border: 1px solid #cccc;
+  text-align: left;
+  border-radius: 0.25rem;
+}
+
+p.text {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.time {
+  color: #c3c3c3;
+  font-size: 0.85rem;
+  margin-top: 0;
+  font-style: italic;
+}
+
+.reminders-item > button {
+  margin-left: auto;
+}
